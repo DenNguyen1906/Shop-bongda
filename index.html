@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Bóng Đá</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Shop Bóng Đá</h1>
+    </header>
+    <section class="product-list">
+        <div class="product">
+            <h2>Áo Đá Banh CLB</h2>
+            <a href="product-ao.html"><img src="ao-clb.jpg" alt="Áo Đá Banh CLB"></a>
+            <p>Giá: <strong>350,000đ</strong></p>
+            <button onclick="addToCart('Áo Đá Banh CLB', 350000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h2>Giày Đá Banh</h2>
+            <a href="product-giay.html"><img src="giay-da-banh.jpg" alt="Giày Đá Banh"></a>
+            <p>Giá: <strong>800,000đ</strong></p>
+            <button onclick="addToCart('Giày Đá Banh', 800000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h2>Găng Tay Thủ Môn</h2>
+            <a href="product-gangtay.html"><img src="gangtay.jpg" alt="Găng Tay Thủ Môn"></a>
+            <p>Giá: <strong>500,000đ</strong></p>
+            <button onclick="addToCart('Găng Tay Thủ Môn', 500000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h2>Bóng Đá FIFA</h2>
+            <a href="product-bong.html"><img src="bong-da.jpg" alt="Bóng Đá FIFA"></a>
+            <p>Giá: <strong>600,000đ</strong></p>
+            <button onclick="addToCart('Bóng Đá FIFA', 600000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h2>Vớ Bóng Đá</h2>
+            <a href="product-vo.html"><img src="vo-bongda.jpg" alt="Vớ Bóng Đá"></a>
+            <p>Giá: <strong>100,000đ</strong></p>
+            <button onclick="addToCart('Vớ Bóng Đá', 100000)">Mua Ngay</button>
+        </div>
+    </section>
+
+    <button onclick="showCart()">🛒 Xem Giỏ Hàng</button>
+    <div id="cart-content"></div>
+
+    <footer>
+        <p>Shop Bóng Đá - Địa chỉ: 123 Đường ABC, TP.HCM - SĐT: 0123 456 789</p>
+    </footer>
+</body>
+</html>
